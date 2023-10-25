@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="io.jsondb.core" type="repository">
+    <properties maven-id="io.jsondb:jsondb-core:1.0.115-j11" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jsondb-core-1.0.115-j11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-module-parameter-names-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-datatype-jdk8-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-datatype-jsr310-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/reflections-0.9.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javassist-3.20.0-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-jxpath-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
