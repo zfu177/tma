@@ -3,12 +3,15 @@ import javax.swing.*;
 import dao.TaskDao;
 import io.jsondb.*;
 
+import java.awt.*;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.security.GeneralSecurityException;
+import java.util.ArrayList;
 import java.util.List;
 
 import model.Task;
@@ -41,16 +44,22 @@ public class Main extends JFrame {
         setVisible(true);
 
         List<Task> taskListData = taskDao.getAll();
-
-        DefaultListModel model = new DefaultListModel();
-
-        logger.info(taskListData.get(0).getName());
+        System.out.println(taskListData.size());
+        String[] taskNameList = new String[taskListData.size()];
 
         for (int i = 0; i < taskListData.size(); i++) {
-            model.add(i, taskListData.get(i).getName());
+            taskNameList[i] = taskListData.get(i).getName();
         }
 
+        DefaultListModel listModel = new DefaultListModel();
+        for (String taskName : taskNameList) {
+            listModel.addElement(taskName);
+        }
 
+        taskList = new JList(listModel);
+        taskList.setPreferredSize(new Dimension(400, 600)); // Adjust size as needed
+
+        bodyPanel.add(new JScrollPane(taskList), BorderLayout.CENTER);
 
 
         addBtn.addActionListener(new ActionListener() {
